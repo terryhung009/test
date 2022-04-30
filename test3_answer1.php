@@ -16,7 +16,7 @@ function randomNumber()
         }
         
     }
-    print_list($list);
+    printList($list);
     foreach($list as $key=>$value){
         echo $key . '<br>';
     }

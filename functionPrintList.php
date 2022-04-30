@@ -1,5 +1,5 @@
 <?php
-function print_list($list)
+function printList($list)
 {
     echo '<pre>';
     var_dump($list);
