@@ -1,23 +1,26 @@
 <?php
 
 
+function print_list($list)
+{
+    echo '<pre>';
+    var_dump($list);
+    echo '</pre>';
+}
 
 function sum($listA)
 {
     $listB = [];
     $sum = 0;
+    print_list($listA);
 
-    echo '<pre>';
-    var_dump($listA);
-    echo '</pre>';
     foreach ($listA as $key => $value) {
         $sum = $sum + $listA[$key];
         // array_push($listB, $sum);
         $listB[] = $sum;
     }
-    echo '<pre>';
-    var_dump($listB);
-    echo '</pre>';
+
+    return $listB;
 }
 
 $listA = [
@@ -30,7 +33,6 @@ $listA = [
     1
 ];
 
-sum($listA);
+$listB = sum($listA);
 
-
-
+print_list($listB);
