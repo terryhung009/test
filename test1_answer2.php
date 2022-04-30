@@ -2,18 +2,11 @@
 
 // $listA = [];
 $listA = array(2,7,7,6);
-// array_push($listA, 1);
-// array_push($listA, 3);
-// array_push($listA, 5);
-// array_push($listA, 8);
-// array_push($listA, 10);
-// array_push($listA, 5);
-// array_push($listA, 1);
+
 echo '<pre>';
 var_dump($listA);
 echo '</pre>';
-// echo $listA[0];
-// echo count($listA);
+
 
 
 // $listB = [];
